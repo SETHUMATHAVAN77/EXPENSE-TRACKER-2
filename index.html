@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./images/icons8-downloads-100.png"
+      type="image/x-icon"
+    />
+    <title>EXPENSE TRACKER</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h2>Expense Tracker</h2>
+    <div class="balance-container">
+      <h4>Your Balance</h4>
+      <h1 id="balance">₹</h1>
+      <div class="inc-exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="money-plus" class="money-plus">₹</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p id="money-minus" class="money-minus">₹</p>
+        </div>
+      </div>
+      <h3>History</h3>
+      <ul id="list" class="list">
+        <li class="minus">
+          Cash<span>-₹400</span>
+          <button class="delete-btn">X</button>
+        </li>
+      </ul>
+      <h3>Add New Transition</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Text</label>
+          <input
+            type="text"
+            id="transaction"
+            placeholder="Enter A Text"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter A Amount"
+            required
+          />
+        </div>
+        <button class="btn">Add Transactions</button>
+      </form>
+    </div>
+
+    <!-- custom script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
